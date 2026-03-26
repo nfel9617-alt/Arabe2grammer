@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أسرار إعراب "إذا" وبنك البكالوريا | منصة نوفل</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #1e3a8a; /* أزرق داكن */
+            --secondary: #2563eb; /* أزرق فاتح */
+            --accent: #dc2626; /* أحمر للتنبيهات */
+            --success: #16a34a; /* أخضر للأمثلة */
+            --bg-page: #f1f5f9;
+            --surface: #ffffff;
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: var(--bg-page);
+            margin: 0;
+            padding: 20px;
+            color: #1e293b;
+            line-height: 1.8;
+        }
+
+        .page {
+            max-width: 1000px;
+            margin: 0 auto 40px auto;
+            background: var(--surface);
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            border-radius: 12px;
+            border-top: 8px solid var(--primary);
+            page-break-after: always;
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 3px double var(--secondary);
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+        }
+
+        header h1 {
+            font-family: 'Cairo', sans-serif;
+            color: var(--primary);
+            font-size: 2.4rem;
+            margin: 0 0 10px 0;
+            font-weight: 900;
+        }
+
+        .subtitle {
+            background: var(--accent);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        h2 {
+            color: var(--primary);
+            border-right: 5px solid var(--accent);
+            padding-right: 15px;
+            font-family: 'Cairo', sans-serif;
+            background: #eff6ff;
+            padding: 10px 15px;
+            border-radius: 4px;
+        }
+
+        .golden-rule {
+            background: #fef2f2;
+            border: 2px dashed var(--accent);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 1.15rem;
+            color: #991b1b;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+        }
+
+        th, td {
+            border: 1px solid #cbd5e1;
+            padding: 15px;
+            text-align: right;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--primary);
+            color: white;
+            font-family: 'Cairo', sans-serif;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        .case-title {
+            color: var(--secondary);
+            font-weight: bold;
+            font-size: 1.2rem;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .example {
+            background: #f0fdf4;
+            border-right: 4px solid var(--success);
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 4px;
+            color: #166534;
+        }
+
+        .exam-question {
+            background: #fffbeb;
+            border: 1px solid #fde68a;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .bac-badge {
+            position: absolute;
+            top: -12px;
+            right: 20px;
+            background: var(--primary);
+            color: white;
+            padding: 2px 15px;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        .q-text {
+            font-size: 1.3rem;
+            font-family: 'Amiri', 'Cairo', serif;
+            color: #0f172a;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .tasks {
+            list-style-type: square;
+            color: #334155;
+            padding-right: 20px;
+            font-weight: bold;
+        }
+
+        .btn-print {
+            display: block;
+            width: 300px;
+            margin: 30px auto 0;
+            padding: 15px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            font-family: 'Cairo', sans-serif;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(30, 58, 138, 0.3);
+            transition: 0.3s;
+        }
+
+        .btn-print:hover { background: #1e40af; }
+
+        @media print {
+            .btn-print { display: none; }
+            body { background: white; padding: 0; }
+            .page { box-shadow: none; border: none; padding: 0; margin-bottom: 0; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="page">
+    <header>
+        <h1>الدرس المتقدم: إعراب الاسم الواقع بعد "إذا"</h1>
+        <span class="subtitle">التفصيل المجهري (استيفاء المفعول، البناء للمجهول، والنواسخ)</span>
+    </header>
+
+    <div class="golden-rule">
+        القاعدة الذهبية: « إِذَا » الظرفية الشرطية لا تدخل إلا على "الأفعال". فإن جاء بعدها "اسم"، فهناك فِعْلٌ مَحْذُوفٌ وجوباً يُفَسِّرُهُ الفعل المذكور بعده.
+    </div>
+
+    <h2>الحالات الأربع لإعراب الاسم المرفوع/المنصوب بعد "إذا"</h2>
+    
+    <table>
+        <tr>
+            <th width="25%">الحالة الدقيقة</th>
+            <th width="40%">الإعراب النموذجي الثابت</th>
+            <th width="35%">مثال تحليلي (السر هنا)</th>
+        </tr>
+        <tr>
+            <td>
+                <span class="case-title">1. الفعل المذكور استوفى مفعوله (أو لازم)</span>
+                إذا + اسم + فعل متعدٍ أخذ مفعوله (أو فعل لا يحتاج مفعولاً).
+            </td>
+            <td>
+                <span style="color:var(--accent); font-weight:bold;">فَاعِلٌ لِفِعْلٍ مَحْذُوفٍ يُفَسِّرُهُ الفِعْلُ المَذْكُورُ</span> مرفوع وعلامة رفعه...
+            </td>
+            <td>
+                <div class="example">﴿إِذَا السَّمَاءُ انشَقَّتْ﴾</div>
+                "انشقت" فعل لازم، إذن (السماءُ): فاعل لفعل محذوف.
+                <div class="example">إذا الشَّعْبُ يوماً أرادَ الحَيَاةَ</div>
+                "أراد" فعل متعدٍ، وقد أخذ مفعوله (الحياة)، إذن (الشعبُ): فاعل لفعل محذوف (تقديره: إذا أراد الشعب).
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="case-title">2. الفعل المذكور لَمْ يَسْتَوْفِ مفعوله</span>
+                إذا + اسم + فعل متعدٍ (يحتاج مفعولاً) ولكنه لم يأخذه.
+            </td>
+            <td>
+                <span style="color:var(--accent); font-weight:bold;">مَفْعُولٌ بِهِ لِفِعْلٍ مَحْذُوفٍ يُفَسِّرُهُ الفِعْلُ المَذْكُورُ</span> منصوب وعلامة نصبه...
+            </td>
+            <td>
+                <div class="example">إِذَا العِلْمَ طَلَبْتَ</div>
+                "طلبت" فعل متعدٍ، لكن أين مفعوله؟ غير موجود! إذن (العلمَ) هو: مفعول به لفعل محذوف يفسره المذكور (التقدير: إذا طلبتَ العلمَ طلبتَ).
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="case-title">3. الفعل المذكور مَبْنِيٌّ لِلْمَجْهُول</span>
+                إذا + اسم + فعل مبني للمجهول (يُفعل، فُعل).
+            </td>
+            <td>
+                <span style="color:var(--accent); font-weight:bold;">نَائِبُ فَاعِلٍ لِفِعْلٍ مَحْذُوفٍ يُفَسِّرُهُ المَذْكُورُ</span> مرفوع وعلامة رفعه...
+            </td>
+            <td>
+                <div class="example">﴿وَإِذَا المَوْءُودَةُ سُئِلَتْ﴾</div>
+                "سُئِلت" مبني للمجهول. إذن (الموءودةُ): نائب فاعل لفعل محذوف (التقدير: إذا سُئِلَت الموءودةُ).
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="case-title">4. الفعل المذكور نَاسِخٌ (ناقص)</span>
+                إذا + اسم + كان أو أخواتها.
+            </td>
+            <td>
+                <span style="color:var(--accent); font-weight:bold;">اِسْمُ (كَانَ) لِفِعْلٍ مَحْذُوفٍ يُفَسِّرُهُ المَذْكُورُ</span> مرفوع وعلامة رفعه...
+            </td>
+            <td>
+                <div class="example">إِذَا المَرْءُ كَانَ نَقِيَّ السَّرِيرَةِ</div>
+                "كان" فعل ماض ناقص. إذن (المرءُ): اسم كان لفعل محذوف يفسره المذكور.
+            </td>
+        </tr>
+    </table>
+    
+    <div style="background: #f8fafc; padding: 15px; border-right: 4px solid var(--primary); border-radius: 4px; font-weight: bold;">
+        💡 ملاحظة للطلبة: الجملة التفسيرية (الجملة الفعلية المذكورة بعد الاسم) تكون دائماً <span style="color: var(--accent);">جملة تفسيرية لا محل لها من الإعراب</span>. أما الجملة المحذوفة (مع الاسم) فهي التي تكون في محل جر مضاف إليه لـ "إذا".
+    </div>
+</div>
+
+<div class="page">
+    <header>
+        <h1>تحدي النوابغ: بنك أسئلة البكالوريا (2008 - 2023)</h1>
+        <span class="subtitle">اختبر قدراتك في إعراب المفردات والجمل الخاصة بـ (إذ، إذا، إذن، حينئذٍ)</span>
+    </header>
+
+    <div class="exam-question">
+        <div class="bac-badge">بكالوريا 2008 (جميع الشعب)</div>
+        <div class="q-text">قال أبو القاسم الشابي:<br>« إِذَا الشَّعْبُ يَوْمًا أَرَادَ الْحَيَاةَ *** فَلَا بُدَّ أَنْ يَسْتَجِيبَ الْقَدَر »</div>
+        <ul class="tasks">
+            <li>أعرب كلمة (الشعبُ) إعراباً مفصلاً.</li>
+            <li>ما محل الجملة الفعلية (أراد الحياة) من الإعراب؟ ولماذا؟</li>
+        </ul>
+    </div>
+
+    <div class="exam-question">
+        <div class="bac-badge">بكالوريا 2011 (آداب وفلسفة)</div>
+        <div class="q-text">قال الشاعر:<br>« وَكُنْتُ إِذَا سَأَلْتُ القَلْبَ يَوْمًا *** تَوَلَّى الدَّمْعُ عَنْ قَلْبِي الجَوَابَا »</div>
+        <ul class="tasks">
+            <li>أعرب الكلمة (إِذَا) إعراب مفردات.</li>
+            <li>بيّن المحل الإعرابي للجملة المابين قوسين: (سألت القلب).</li>
+        </ul>
+    </div>
+
+    <div class="exam-question">
+        <div class="bac-badge">بكالوريا 2013 (لغات أجنبية)</div>
+        <div class="q-text">« فَبَيْنَمَا نَحْنُ فِي أَمْنٍ وَفِي دَعَةٍ *** إِذَا الرَّزَايَا بِوَادِي القَوْمِ تَنْزِلُ »</div>
+        <ul class="tasks">
+            <li>حدد المعنى الذي أفادته (إذا) في هذا البيت، ثم أعربها.</li>
+            <li>ما هو إعراب الجملة (الرزايا... تنزل) الواقعة بعد "إذا"؟</li>
+        </ul>
+    </div>
+
+    <div class="exam-question">
+        <div class="bac-badge">بكالوريا 2016 (علوم تجريبية)</div>
+        <div class="q-text">قال البشير الإبراهيمي:<br>« ... وَيُعَلِّمُونَهُمْ حِينَئِذٍ أَنَّ الحُرِّيَّةَ تُؤْخَذُ وَلَا تُعْطَى »</div>
+        <ul class="tasks">
+            <li>أعرب كلمة (حِينَئِذٍ) إعراباً تاماً مبيناً حركة بنائها ونوع التنوين فيها.</li>
+        </ul>
+    </div>
+
+    <div class="exam-question">
+        <div class="bac-badge">بكالوريا 2019 (آداب وفلسفة)</div>
+        <div class="q-text">« فَإِذَا ( هُوَ يَبْكِي ) بِحُرْقَةٍ ... »</div>
+        <ul class="tasks">
+            <li>ما دلالة (إذا) في العبارة؟ وما إعرابها؟</li>
+            <li>ما محل الجملة الاسمية (هو يبكي) من الإعراب؟</li>
+        </ul>
+    </div>
+
+    <div class="exam-question">
+        <div class="bac-badge">بكالوريا 2021 (علوم / رياضيات)</div>
+        <div class="q-text">قيل لأحدهم: سأجتهدُ في دراستي.<br>فأجاب: « إِذَنْ (تَنْجَحَ) بِتَفَوُّقٍ »</div>
+        <ul class="tasks">
+            <li>أعرب (إذنْ) إعراباً تاماً مبيناً شروط إعمالها.</li>
+            <li>أعرب الفعل المضارع (تنجحَ).</li>
+        </ul>
+    </div>
+
+    <button class="btn-print" onclick="window.print()">🖨️ طباعة أوراق العمل والاختبار</button>
+</div>
+
+</body>
+</html>
